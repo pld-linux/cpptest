@@ -1,12 +1,12 @@
 Summary:	Framework for handling automated tests in C++
 Summary(pl.UTF-8):	Framework do obsługi zautomatyzowanych testów w C++
 Name:		cpptest
-Version:	1.1.0
+Version:	1.1.1
 Release:	1
 License:	LGPL v2.1+
 Group:		Libraries
-Source0:	http://dl.sourceforge.net/cpptest/%{name}-%{version}.tar.gz
-# Source0-md5:	818401e4698c2cfe8395e0ed61fbd097
+Source0:	http://downloads.sourceforge.net/cpptest/%{name}-%{version}.tar.gz
+# Source0-md5:	b50379402d69d40417add19ef88f9938
 URL:		http://cpptest.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -21,9 +21,9 @@ output formats are supported and new ones are easily added.
 
 %description -l pl.UTF-8
 C++Test jest przenośnym i potężnym frameworkiem do obsługi
-zautomatyzowanych testów w C++. Kładzie on duży nacisk na
-użyteczność oraz rozszerzalność. Obsługiwanych jest kilka formatów
-wyjściowych, a nowe dodaje się z łatwością.
+zautomatyzowanych testów w C++. Kładzie on duży nacisk na użyteczność
+oraz rozszerzalność. Obsługiwanych jest kilka formatów wyjściowych, a
+nowe dodaje się z łatwością.
 
 %package devel
 Summary:	Header files for cpptest library

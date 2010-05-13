@@ -10,6 +10,7 @@ Source0:	http://downloads.sourceforge.net/cpptest/%{name}-%{version}.tar.gz
 URL:		http://cpptest.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
+BuildRequires:	libstdc++-devel
 BuildRequires:	libtool
 BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)

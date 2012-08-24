@@ -8,11 +8,10 @@ Group:		Libraries
 Source0:	http://downloads.sourceforge.net/cpptest/%{name}-%{version}.tar.gz
 # Source0-md5:	b50379402d69d40417add19ef88f9938
 URL:		http://cpptest.sourceforge.net/
-BuildRequires:	autoconf
-BuildRequires:	automake
+BuildRequires:	autoconf >= 2.53
+BuildRequires:	automake >= 1:1.8
 BuildRequires:	libstdc++-devel
-BuildRequires:	libtool
-BuildRequires:	pkgconfig
+BuildRequires:	libtool >= 2:1.5
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -31,6 +30,7 @@ Summary:	Header files for cpptest library
 Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki cpptest
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
+Requires:	libstdc++-devel
 
 %description devel
 Header files for cpptest library.
@@ -76,7 +76,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS NEWS README
+%doc AUTHORS BUGS NEWS README
 %attr(755,root,root) %{_libdir}/libcpptest.so.*.*.*
 %attr(755,root,root) %ghost %{_libdir}/libcpptest.so.0
 
